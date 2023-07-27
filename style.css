@@ -10,8 +10,10 @@ body {
     max-width: 992px;
     display: block;
     margin: auto;
+    font-size: 14px;
+    font-weight: 400;
 }
-a:link {
+a {
     text-decoration: none;
     color: black;
 }
@@ -22,34 +24,49 @@ a:hover {
     color: var(--chart-color);
 }
 li {
-list-style: none;
-margin-bottom: 7px;
+    list-style: none;
+    margin-bottom: 7px;
+}
+h1{
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 0;
 }
 footer {
-    
     padding: 5px;
     background-color: var(--main-gray-bg-color);
+}
+.form {
+    display: inline-block;
+    margin: 15px 0 15px 0;
+    border: 2px solid var(--main-gray-bg-color);
+    border-radius: 4px;
 }
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo {
+.logo {
     display: flex;
     justify-content: flex-start;
     margin: 0;
+    padding: 20px;
 }
-.navbar .navLinks {
+.navLinks {
     display: flex;
     justify-content:flex-end;
 }
-.navbar .navLink {
+.navLinkAccomodations {
     margin: 15px;
-    color: black;
+    padding: 20px;
 }
-.navbar .navLink.active {
-    text-decoration: overline;
+.navLinkActivities {
+    margin: 15px;
+    padding: 23px;
+}
+a.active {
+    border-top: 3px solid var(--chart-color);
     color: var(--chart-color);
 }
 .container {
