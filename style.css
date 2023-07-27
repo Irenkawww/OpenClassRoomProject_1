@@ -23,6 +23,10 @@ a:visited {
 a:hover {
     color: var(--chart-color);
 }
+a.active {
+    border-top: 3px solid var(--chart-color);
+    color: var(--chart-color);
+}
 li {
     list-style: none;
     margin-bottom: 7px;
@@ -35,12 +39,6 @@ h1{
 footer {
     padding: 5px;
     background-color: var(--main-gray-bg-color);
-}
-.form {
-    display: inline-block;
-    margin: 15px 0 15px 0;
-    border: 2px solid var(--main-gray-bg-color);
-    border-radius: 4px;
 }
 .navbar {
     display: flex;
@@ -65,9 +63,51 @@ footer {
     margin: 15px;
     padding: 23px;
 }
-a.active {
-    border-top: 3px solid var(--chart-color);
+.form {
+    display: inline-block;
+    align-items: center;
+    margin: 15px 0 15px 0;
+}
+.form span {
+    height: 14px;
+    padding: 3px 0px 4px 6px;
+    background-color: var(--main-gray-bg-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 2px solid var(--main-gray-bg-color);
+}
+.form input {
+    height: 15px;
+    padding: 4px 10px 4px 4px;
+    border-left:none;
+    border-right: none;
+    border-top: 2px solid var(--main-gray-bg-color);
+    border-bottom: 2px solid var(--main-gray-bg-color);
+}
+input:focus {
+    outline: none;
+}
+.form a.button {
+    padding: 3px 4px 4px 4px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: var(--chart-color);
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2px solid var(--chart-color);
+    position: relative;
+    left: -7px;
+}
+.form a.button:hover {
+    background-color: var(--lighter-chart-color);
     color: var(--chart-color);
+    border: 2px solid var(--lighter-chart-color);
+    font-weight: 600;
+}
+.smallText {
+    font-size: 11px;
+    margin: 10px 0px;
 }
 .container {
     display: flex;
