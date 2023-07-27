@@ -1,0 +1,63 @@
+:root {
+    --main-gray-bg-color: #F2F2F2;
+    --chart-color: #0065FC;
+    --lighter-chart-color: #DEEBFF;
+    --main-font-family: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: var(--main-font-family);
+    max-width: 992px;
+    display: block;
+    margin: auto;
+}
+a:link {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: var(--chart-color);
+}
+li {
+list-style: none;
+margin-bottom: 7px;
+}
+footer {
+    
+    padding: 5px;
+    background-color: var(--main-gray-bg-color);
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+}
+.navbar .navLinks {
+    display: flex;
+    justify-content:flex-end;
+}
+.navbar .navLink {
+    margin: 15px;
+    color: black;
+}
+.navbar .navLink.active {
+    text-decoration: overline;
+    color: var(--chart-color);
+}
+.container {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 30px;
+}
+.strongTextFooter {
+    margin-bottom: 17px;
+    font-weight: 900;
+}
