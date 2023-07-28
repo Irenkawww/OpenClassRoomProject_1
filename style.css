@@ -37,6 +37,14 @@ h1{
     font-weight: 900;
     margin-bottom: 0;
 }
+h2 {
+    padding: 10px;
+    margin: 10px;
+}
+h3 {
+    padding: 10px;
+    margin: 10px;
+}
 footer {
     padding: 5px;
     background-color: var(--main-gray-bg-color);
@@ -144,23 +152,42 @@ input:focus {
 .filterButtonIcon:hover {
     border: 1px solid var(--chart-color);
 }
-.accomodations {
+
+.accomodationsWrapper {
     display: flex;
-    justify-content: space-around;
+    height: auto;
 }
-
-.accomodationsInCity {
+.styleWrapper {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.col-left {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--main-gray-bg-color);
 }
-
-.mostPopular {
+.col-right {
+    flex-basis: 30%;
     background-color: var(--main-gray-bg-color);
 }
+.activitiesWrapper {
+    display: flex;
+    height: auto;
+}
+.popularAccomodation {
+    display: flex;
+    justify-content: space-between;
+}
+
 .container {
     display: flex;
     justify-content: flex-start;
     margin-right: 30px;
 }
+
 .strongTextFooter {
     margin-bottom: 17px;
     font-weight: 900;
