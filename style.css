@@ -1,5 +1,6 @@
 :root {
     --main-gray-bg-color: #F2F2F2;
+    --main-gray-border-color: #b7b7b7;
     --chart-color: #0065FC;
     --lighter-chart-color: #DEEBFF;
     --main-font-family: 'Raleway', sans-serif;
@@ -108,6 +109,52 @@ input:focus {
 .smallText {
     font-size: 11px;
     margin: 10px 0px;
+}
+.smallText i {
+    padding: 4px 8px;
+    margin: 2px;
+    border: 1px solid var(--main-gray-border-color);
+    border-radius: 50%;
+}
+.filterButtonText {
+    border-top: 2px solid var(--main-gray-bg-color);
+    border-right: 2px solid var(--main-gray-bg-color);
+    border-bottom: 2px solid var(--main-gray-bg-color);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-weight: 800;
+    padding: 5px 12px 5px 16px;
+    margin: 10px 10px 10px 0;
+    position: relative;
+    left: -12px;
+}
+.filterButtonIcon {
+    border: 1px solid var(--lighter-chart-color);
+    border-radius: 50%;
+    background-color: var(--lighter-chart-color);
+    padding: 5px;
+    margin: 10px 0px 10px 10px;
+}
+.filterButtonText:hover {
+    border-top: 1px solid var(--chart-color);
+    border-right: 1px solid var(--chart-color);
+    border-bottom: 1px solid var(--chart-color);
+    color: var(--chart-color);
+}
+.filterButtonIcon:hover {
+    border: 1px solid var(--chart-color);
+}
+.accomodations {
+    display: flex;
+    justify-content: space-around;
+}
+
+.accomodationsInCity {
+    background-color: var(--main-gray-bg-color);
+}
+
+.mostPopular {
+    background-color: var(--main-gray-bg-color);
 }
 .container {
     display: flex;

@@ -32,30 +32,40 @@
     <h1>Find a place for your dream vacation</h1>
     <div>Downtown or in nature</div>
 
-    <div class="form">
+    <form class="form">
       <span>
         <i class="fa-solid fa-location-dot"></i>
       </span>
       <input type="text" placeholder="type a location" />
       <a href="#" class="button">Search</a>
-    </div>
+    </form>
 
     <div>
-      Filters
-      <button class="btn" onclick="filterSelection('lowCost')">Low cost</button>
-      <button class="btn" onclick="filterSelection('familyFriendly')">
-        Family-friendly
-      </button>
-      <button class="btn" onclick="filterSelection('romantic')">
-        Romantic
-      </button>
-      <button class="btn" onclick="filterSelection('petsAllowed')">
-        Pets allowed
-      </button>
+      <strong>Filters</strong>
+
+      <span class="filterButtonIcon">
+        <i class="fa-solid fa-money-bill-wave" style="color: #0065fc"></i>
+      </span>
+      <span class="filterButtonText">Low cost</span>
+
+      <span class="filterButtonIcon">
+        <i class="fa-solid fa-child-reaching" style="color: #0065fc"></i>
+      </span>
+      <span class="filterButtonText">Family-friendly</span>
+
+      <span class="filterButtonIcon">
+        <i class="fa-solid fa-heart" style="color: #0065fc"></i>
+      </span>
+      <span class="filterButtonText"> Romantic</span>
+
+      <span class="filterButtonIcon">
+        <i class="fa-solid fa-dog" style="color: #0065fc"></i>
+      </span>
+      <span class="filterButtonText"> Pets allowed</span>
     </div>
 
     <div class="smallText">
-      <i class="fa-solid fa-circle-info" style="color: #bfbfbf"></i>
+      <i class="fa-solid fa-info" style="color: #0065fc"></i>
       More than 500 accomodations are available in this city
     </div>
 
