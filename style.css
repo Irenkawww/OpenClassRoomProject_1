@@ -161,17 +161,16 @@ input:focus {
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
+    background-color: var(--main-gray-bg-color);
 }
 .col-left {
     flex-basis: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--main-gray-bg-color);
 }
 .col-right {
     flex-basis: 30%;
-    background-color: var(--main-gray-bg-color);
 }
 .activitiesWrapper {
     display: flex;
@@ -182,6 +181,31 @@ input:focus {
     justify-content: space-between;
 }
 
+.accomodationMaps {
+    display: flex;
+    flex-wrap: wrap;
+}
+.accomodationMap {
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.accomodationMaps > div {
+    background-color: white;
+    border: 10px solid white;
+    border-radius: 25px;
+    width: 300px;
+    margin: 10px;
+    text-align: left;
+    line-height: 25px;
+}
+.accomodationMap img {
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
 .container {
     display: flex;
     justify-content: flex-start;
