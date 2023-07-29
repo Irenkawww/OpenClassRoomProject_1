@@ -191,14 +191,14 @@ input:focus {
     flex-direction: column;
     justify-content: space-between;
 }
-.accomodationMaps > div {
+.accomodationMaps > a {
     background-color: white;
-    border: 10px solid white;
+    border: 7px solid white;
     border-radius: 25px;
-    width: 300px;
-    margin: 10px;
+    width: 185px;
+    margin: 5px;
     text-align: left;
-    line-height: 25px;
+    line-height: 20px;
 }
 .accomodationMap img {
     width: 100%;
