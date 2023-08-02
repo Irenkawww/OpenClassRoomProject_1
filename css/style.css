@@ -8,11 +8,14 @@
 
 body {
     font-family: var(--main-font-family);
+    font-size: 14px;
+    font-weight: 400;
+}
+header,
+main {
     max-width: 992px;
     display: block;
     margin: auto;
-    font-size: 14px;
-    font-weight: 400;
 }
 a {
     text-decoration: none;
@@ -42,9 +45,18 @@ h2, h3 {
     margin: 10px;
 }
 footer {
+    display: block;
+    width: auto;
+    margin: auto;
     padding: 5px;
     margin-top: 20px;
     background-color: var(--main-gray-bg-color);
+}
+footer div {
+    margin-right: 50px;
+}
+ul {
+    padding: 5px
 }
 .navbar {
     display: flex;
@@ -300,8 +312,9 @@ input:focus {
 }
 .container {
     display: flex;
+    max-width: 992px;
+    margin: auto;
     justify-content: flex-start;
-    margin-right: 30px;
 }
 
 .strongTextFooter {
