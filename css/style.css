@@ -267,13 +267,15 @@ input:focus {
 .activitiesMapWrapperMiddle {
     height: 195px;
 }
-.activitiesImgWrapper, 
+
+.activitiesImgWrapper,
 .activitiesImgWrapperSmaller, 
 .activitiesImgWrapperSmall,
 .activitiesImgWrapperMiddle {
     width: 230px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    position: relative;
     overflow: hidden;
 }
 .activitiesImgWrapper {
@@ -288,14 +290,31 @@ input:focus {
 .activitiesImgWrapperMiddle {
     height: 145px;
 }
-.activitiesImgWrapper img, 
-.activitiesImgWrapperSmaller img, 
-.activitiesImgWrapperSmall img,
-.activitiesImgWrapperMiddle img {
-    min-width: 230px;
-    vertical-align: middle;
-}
 .activitiesImgWrapper img {
+    width: auto;
+    min-height: 350px;
+    position: absolute;
+    bottom: 0;
+    left:-60%;
+} 
+.activitiesImgWrapperSmaller img,
+.activitiesImgWrapperSmall img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    position: absolute;
+    bottom: -25%;
+    left: 0;
+}
+.activitiesImgWrapperMiddle img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/* .activitiesImgWrapper img {
     min-height: 350px;
 }
 .activitiesImgWrapperSmaller img {
@@ -306,7 +325,7 @@ input:focus {
 }
 .activitiesImgWrapperMiddle img {
     min-height: 145px;
-}
+}*/
 .textSpaseAround {
     margin: 15px;
 }
