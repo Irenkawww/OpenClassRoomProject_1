@@ -62,6 +62,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap:wrap;
 }
 .logo {
     display: flex;
@@ -133,6 +134,14 @@ input:focus {
     border: 1px solid var(--main-gray-border-color);
     border-radius: 50%;
 }
+.filtersContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.filtersContainer span {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .filterButtonText {
     border-top: 2px solid var(--main-gray-bg-color);
     border-right: 2px solid var(--main-gray-bg-color);
@@ -175,8 +184,7 @@ input:focus {
 .col-left {
     flex-basis: 70%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .col-right {
     flex-basis: 30%;
@@ -239,6 +247,7 @@ input:focus {
 }
 .activitiesMapsWrapper {
     display: flex;
+    flex-wrap: wrap;
 }
 .rowTwo {
     display: inline-block;

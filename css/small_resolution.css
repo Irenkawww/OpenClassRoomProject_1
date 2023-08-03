@@ -1,0 +1,30 @@
+@media screen and (max-width: 768px) {
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo {
+ display: flex;
+ justify-content: center;
+}
+h1{
+    margin-top: 0;
+}
+.navLinkAccomodations, .navLinkActivities {
+    margin: 0;
+}
+.filtersContainer {
+    flex-direction: column;
+}
+.accomodationsWrapper {
+    flex-direction: column-reverse;
+}
+.accomodationMaps, .mostPopularMaps {
+    justify-content: center;
+}
+.col-left {
+    background-color: white;
+}
+}
