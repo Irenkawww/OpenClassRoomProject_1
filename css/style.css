@@ -314,18 +314,6 @@ input:focus {
     bottom: 0;
     left: 0;
 }
-/* .activitiesImgWrapper img {
-    min-height: 350px;
-}
-.activitiesImgWrapperSmaller img {
-    min-height: 190px;
-}
-.activitiesImgWrapperSmall img {
-    min-height: 100px;
-}
-.activitiesImgWrapperMiddle img {
-    min-height: 145px;
-}*/
 .textSpaseAround {
     margin: 15px;
 }
