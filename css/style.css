@@ -83,20 +83,20 @@ ul {
     padding: 23px;
 }
 .form {
-    display: inline-block;
+    display: inline-flex;
     align-items: center;
     margin: 15px 0 15px 0;
 }
 .form span {
     height: 14px;
-    padding: 3px 0px 4px 6px;
+    padding: 5px 0px 5px 6px;
     background-color: var(--main-gray-bg-color);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border: 2px solid var(--main-gray-bg-color);
 }
 .form input {
-    height: 15px;
+    height: 16px;
     padding: 4px 10px 4px 4px;
     border-left:none;
     border-right: none;
@@ -107,7 +107,7 @@ input:focus {
     outline: none;
 }
 .form a.button {
-    padding: 3px 4px 4px 4px;
+    padding: 4px 4px 4px 4px;
     font-size: 14px;
     font-weight: 600;
     background-color: var(--chart-color);
@@ -137,6 +137,7 @@ input:focus {
 .filtersContainer {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 .filtersContainer span {
     margin-top: 10px;
