@@ -209,14 +209,18 @@ input:focus {
     background-color: white;
     border: 7px solid white;
     border-radius: 25px;
-    width: 185px;
+    flex-basis: 30%;
+    box-sizing:border-box;
     margin: 5px;
     text-align: left;
     line-height: 20px;
 }
+
 .accomodationMap img {
+    display: flex;
     width: 100%;
-    height: auto;
+    height: 110px;
+    object-fit: cover;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
 }
@@ -235,8 +239,10 @@ input:focus {
     line-height: 18px;
 }
 .mostPopularMap img {
+    display: flex;
+    object-fit: cover;
     width: 115px;
-    height: auto;
+    height: 115px;
     padding-top: 4px;
     padding-left: 4px;
     padding-right: 5px;
@@ -250,8 +256,9 @@ input:focus {
     display: flex;
     flex-wrap: wrap;
 }
-.rowTwo {
-    display: inline-block;
+.rowTwo, .rowOne {
+    display: flex;
+    flex-direction:column;
 }
 .activitiesMapWrapper, 
 .activitiesMapWrapperSmaller, 
@@ -268,31 +275,29 @@ input:focus {
     height: 395px;
 }
 .activitiesMapWrapperSmaller {
-    height: 235px;
-    margin-bottom: 15px;
+    height: 230px;
 }
 .activitiesMapWrapperSmall {
     height: 145px;
 }
 .activitiesMapWrapperMiddle {
-    height: 195px;
+    height: 190px;
 }
 
 .activitiesImgWrapper,
 .activitiesImgWrapperSmaller, 
 .activitiesImgWrapperSmall,
 .activitiesImgWrapperMiddle {
-    width: 230px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    position: relative;
     overflow: hidden;
 }
 .activitiesImgWrapper {
     height: 350px;
 }
 .activitiesImgWrapperSmaller {
-    height: 190px;
+    height: 185px;
 }
 .activitiesImgWrapperSmall {
     height: 100px;
@@ -301,31 +306,25 @@ input:focus {
     height: 145px;
 }
 .activitiesImgWrapper img {
-    width: auto;
+    width: 100%;
     min-height: 350px;
-    position: absolute;
-    bottom: 0;
-    left:-60%;
+    object-position: 50% 50%;
+    object-fit: cover;
 } 
-.activitiesImgWrapperSmaller img,
-.activitiesImgWrapperSmall img {
+.activitiesImgWrapperSmaller img {
     width: 100%;
     height: auto;
-    vertical-align: middle;
-    position: absolute;
-    bottom: -25%;
-    left: 0;
+    object-fit: contain;
+    object-position: 0px -80px;
 }
-.activitiesImgWrapperMiddle img {
+.activitiesImgWrapperMiddle img, .activitiesImgWrapperSmall img {
     width: 100%;
     height: auto;
-    vertical-align: middle;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    object-position: bottom;
+    object-fit: cover;
 }
-.textSpaseAround {
-    margin: 15px;
+ .textSpaseAround {
+    margin: 12px;
 }
 .container {
     display: flex;
